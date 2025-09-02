@@ -1,6 +1,6 @@
-let http = require('http');
+let http = require('http'); //importa o modulo http
 
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World!');
-}).listen(8080);
+http.createServer(function (req, res) { //cria um servidor
+  res.writeHead(200, {'Content-Type': 'text/plain'}); //escreve algo no servidor
+  res.end('Hello World!'); // escreve hello world
+}).listen(8080); //mostra o host 8080
