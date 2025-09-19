@@ -1,4 +1,4 @@
-const fs = require('fs') //importa o modulo fs
+import fs from 'fs' //importa o modulo fs
 
 fs.readFile("example.txt", 'utf-8', (err, data) => { //lê o arquivo example text
     if(err){ //se der erro

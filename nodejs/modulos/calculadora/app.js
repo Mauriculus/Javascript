@@ -1,16 +1,16 @@
-const FunMat = require("./funcoes_matematicas.js")
+import {soma, subtrai, multiplica, divide} from './funcoes_matematicas.js'
+import {idade} from './calcula_idade.js'
 
-const resultSoma = FunMat.soma(1, 2)
+const resultSoma = soma(1, 2)
 
-const resultSubtrai = FunMat.subtrai(1, 3)
+const resultSubtrai = subtrai(1, 3)
 
-const resultMultiplica = FunMat.multiplica(9, 2)
+const resultMultiplica = multiplica(9, 2)
 
-const resultDivide = FunMat.divide(2, 2)
+const resultDivide = divide(2, 2)
 
 console.log(resultSoma, resultSubtrai, resultMultiplica, resultDivide)
 
-const CalcIdade = require("./calcula_idade.js")
 
-const idade = CalcIdade.idade(2009)
-console.log("A IDADE CALCULADA ÉEEEEE........ TADADADADAN ", idade)
+const idaders = idade(2009)
+console.log("A IDADE CALCULADA É", idaders)

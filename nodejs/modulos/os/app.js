@@ -1,4 +1,4 @@
-const os = require('os') //importa o modulo os
+import os from 'os' //importa o modulo os
 
 console.log(os.platform()) //imprime o sistema operacional no console
 console.log('Arquiquetura do sistema:', os.arch()) //imprime a arquitetura do sistema no console
