@@ -1,5 +1,5 @@
-import {soma, subtrai, multiplica, divide} from './funcoes_matematicas.js'
-import * as calcula_idade from './calcula_idade.js'
+import {soma, subtrai, multiplica, divide} from './modulos/funcoes_matematicas.js'
+import * as calcula_idade from './modulos/calcula_idade.js'
 
 const resultSoma = soma(1, 2)
 
