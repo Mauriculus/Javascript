@@ -16,6 +16,12 @@ app.use('/', indexRoutes);
 const userRoutes = require('./routes/users');
 app.use('/users', userRoutes);
 
+const produtosRoutes = require('./routes/produtos')
+app.use('/produtos', produtosRoutes)
+
+const clientesRoutes = require('./routes/clientes')
+app.use('/clientes', clientesRoutes)
+
 // Servidor
 app.listen(port, () => {
   console.log(`Servidor rodando em http://localhost:${port}`);

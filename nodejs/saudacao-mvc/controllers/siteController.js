@@ -16,5 +16,8 @@ module.exports = {
   },
     usuarios: (req, res) => {
     res.sendFile('usuarios.html', { root: './views' });
+  },
+  login: (req, res) => {
+    res.sendFile('login.html', {root: './views'})
   }
 };
