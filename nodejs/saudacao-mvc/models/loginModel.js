@@ -1,10 +1,12 @@
 module.exports = {
-    checarLogin: (usuario, senha,) => {
-        if (usuario == "Mauriculus" && senha == "senha"){
-            login = 'dados corretos e está logado'
+    checarLogin: (email, senha) => {
+        let mensagemLogin
+
+        if (email == "mauroscan20@gmail.com" && senha == "senha123") {
+            mensagemLogin = "Você inseriu os dados corretos e está logado"
         } else {
-            login = 'usuário ou senha incorreto'
+            mensagemLogin = "Você inseriu email ou senha incorretos"
         }
-        return `Você inseriu ${login}`
+        return `${mensagemLogin}`
     }
 }
